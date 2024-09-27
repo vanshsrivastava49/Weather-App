@@ -109,4 +109,11 @@ body{
         height: 60px;
         cursor:pointer;
     }
+    .humid,.wind{
+        font-size: 20px;
+        margin-top:-5px;
+    }
+    .textw,.texth{
+        font-size: 10px;
+    }
 }
