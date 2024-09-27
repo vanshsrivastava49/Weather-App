@@ -88,13 +88,23 @@ body{
 .textw,.texth{
     font-size: 15px;
 }
-@media (max-width:1000px){
+@media (orientation:portrait){
+    .box{
+        width:90%;
+        max-width: 600px;
+        background: linear-gradient(135deg,#00ddff,#00ccff);
+        color:#fff;
+        margin:100px auto 0;
+        border-radius: 30px;
+        padding:40px 35px;
+        text-align: center;
+    }
     .search button{
         border:0;
         outline: 0;
         background: #ebfffc;
         border-radius: 50%;
-        width:60px;
+        width:80px;
         margin-left: -10px;
         height: 60px;
         cursor:pointer;
