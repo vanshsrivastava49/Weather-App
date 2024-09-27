@@ -76,7 +76,27 @@ body{
     width:42px;
     margin-right:10px;
 }
-.humidity,.wind{
+.coll{
+    width:40px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.humid,.wind{
     font-size: 30px;
     margin-top:-5px;
+}
+.textw,.texth{
+    font-size: 15px;
+}
+@media (max-width:1000px){
+    .search button{
+        border:0;
+        outline: 0;
+        background: #ebfffc;
+        border-radius: 50%;
+        width:60px;
+        margin-left: -10px;
+        height: 60px;
+        cursor:pointer;
+    }
 }
