@@ -4,8 +4,6 @@
     const searchbox = document.querySelector(".search input");
     const searchbtn = document.querySelector(".search button");
     const weathericon=document.querySelector(".weather-icon");
-    const h_text="Humidity";
-    const w_text="Wind";
     async function checkweather(city) {
             const response = await fetch(apiurl + city + `&appid=${apikey}`);
             const val = await response.json();
@@ -13,8 +11,8 @@
             
             document.querySelector(".city").innerHTML = val.name;
             document.querySelector(".temp").innerHTML = Math.round(val.main.temp) + "°C";
-            document.querySelector(".humid").innerHTML = val.main.humidity + "%\n"+h_text;
-            document.querySelector(".wind").innerHTML = val.wind.speed + "km/h\n"+w_text;
+            document.querySelector(".humid").innerHTML = val.main.humidity + "%\n";
+            document.querySelector(".wind").innerHTML = val.wind.speed + "km/h\n";
             if(val.weather[0].main=="Clouds")
                 weathericon.src="./images/clouds.png";
             else if(val.weather[0].main=="Drizzle")

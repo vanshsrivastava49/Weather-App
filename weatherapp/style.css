@@ -86,9 +86,6 @@ body{
     font-size: 30px;
     margin-top:-5px;
 }
-.textw,.texth{
-    font-size: 15px;
-}
 @media (orientation:portrait){
     .box{
         width:90%;
@@ -113,9 +110,6 @@ body{
     .humid,.wind{
         font-size: 20px;
         margin-top:-5px;
-    }
-    .textw,.texth{
-        font-size: 10px;
     }
 }
 @media (max-width:500px){
