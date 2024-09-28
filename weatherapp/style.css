@@ -23,13 +23,14 @@ body{
     align-items: center;
     justify-content: space-between;
 }
-.search input{
+.in{
     border:0;
     outline:0;
     background:#ebfffc;
     color:#555;
     padding:10px 25px;
     height: 60px;
+    width:235px;
     border-radius: 35px;
     flex:1;
     margin-right:16px;
@@ -40,8 +41,7 @@ body{
     outline: 0;
     background: #ebfffc;
     border-radius: 50%;
-    width:60px;
-    height: 60px;
+    height:60px;
     cursor:pointer;
 }
 .search button img{
