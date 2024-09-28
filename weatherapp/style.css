@@ -1,177 +1,119 @@
-* {
-    margin: 0;
+*{
+    margin:0;
     padding: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    box-sizing: border-box;
+    box-sizing:border-box;
 }
-
-body {
+body{
     background-color: #222;
 }
-
-.box {
-    width: 90%;
+.box{
+    width:90%;
     max-width: 500px;
-    background: linear-gradient(135deg, #00ddff, #00ccff);
-    color: #fff;
-    margin: 100px auto 0;
+    background: linear-gradient(135deg,#00ddff,#00ccff);
+    color:#fff;
+    margin:100px auto 0;
     border-radius: 30px;
-    padding: 40px 35px;
+    padding:40px 35px;
     text-align: center;
 }
-
-.search {
-    width: 100%;
+.search{
+    width:100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
-.search input {
-    border: 0;
-    outline: 0;
-    background: #ebfffc;
-    color: #555;
-    padding: 10px 25px;
+.search input{
+    border:0;
+    outline:0;
+    background:#ebfffc;
+    color:#555;
+    padding:10px 25px;
     height: 60px;
     border-radius: 35px;
-    flex: 1;
-    margin-right: 16px;
-    font-size: 20px;
+    flex:1;
+    margin-right:16px;
+    font-size:20px;
 }
-
-.search button {
-    border: 0;
+.search button{
+    border:0;
     outline: 0;
     background: #ebfffc;
     border-radius: 50%;
-    width: 60px;
+    width:60px;
     height: 60px;
-    cursor: pointer;
+    cursor:pointer;
 }
-
-.search button img {
-    width: 20px;
+.search button img{
+    width:20px;
 }
-
-.weather-icon {
-    width: 180px;
-    margin-top: 30px;
+.weather-icon{
+    width:180px;
+    margin-top:30px;
 }
-
-.weather h1 {
+.weather h1{
     font-size: 85px;
     font-weight: 600;
 }
-
-.weather h2 {
+.weather h2{
     font-size: 50px;
     font-weight: 600;
     margin-top: -15px;
 }
-
-.details {
+.details{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 25px;
     margin-top: 50px;
 }
-
-.col {
+.col{
     display: flex;
     align-items: center;
     text-align: left;
 }
-
-.col img {
-    width: 42px;
-    margin-right: 10px;
+.col img{
+    width:42px;
+    margin-right:10px;
 }
-
-.coll {
-    width: 40px;
+.coll{
+    width:40px;
     margin-right: 10px;
     margin-left: 10px;
 }
-
-.humid, .wind {
+.humid,.wind{
     font-size: 30px;
-    margin-top: -5px;
+    margin-top:-5px;
 }
-
-.textw, .texth {
+.textw,.texth{
     font-size: 15px;
 }
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .box {
-        margin: 50px auto;
-        padding: 30px 20px;
+@media (orientation:portrait){
+    .box{
+        width:90%;
+        max-width: 600px;
+        background: linear-gradient(135deg,#00ddff,#00ccff);
+        color:#fff;
+        margin:100px auto 0;
+        border-radius: 30px;
+        padding:40px 35px;
+        text-align: center;
     }
-    
-    .search input {
-        font-size: 18px;
-        height: 50px;
-        padding: 10px;
+    .search button{
+        border:0;
+        outline: 0;
+        background: #ebfffc;
+        border-radius: 50%;
+        width:80px;
+        margin-left: -10px;
+        height: 60px;
+        cursor:pointer;
     }
-
-    .search button {
-        width: 50px;
-        height: 50px;
-    }
-
-    .weather h1 {
-        font-size: 60px;
-    }
-
-    .weather h2 {
-        font-size: 40px;
-    }
-
-    .details {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0 15px;
-    }
-
-    .col {
-        justify-content: flex-start;
-        margin-bottom: 15px;
-    }
-
-    .humid, .wind {
-        font-size: 25px;
-    }
-
-    .textw, .texth {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 480px) {
-    .box {
-        padding: 20px 15px;
-    }
-
-    .search input {
-        font-size: 16px;
-    }
-
-    .weather h1 {
-        font-size: 50px;
-    }
-
-    .weather h2 {
-        font-size: 35px;
-    }
-
-    .humid, .wind {
+    .humid,.wind{
         font-size: 20px;
+        margin-top:-5px;
     }
-
-    .textw, .texth {
+    .textw,.texth{
         font-size: 10px;
     }
 }
