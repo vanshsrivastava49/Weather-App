@@ -105,7 +105,7 @@ body{
         outline: 0;
         background: #ebfffc;
         border-radius: 50%;
-        width:80px;
+        width:60px;
         margin-left: -10px;
         height: 60px;
         cursor:pointer;
@@ -116,5 +116,10 @@ body{
     }
     .textw,.texth{
         font-size: 10px;
+    }
+}
+@media (max-width:500px){
+    .search button{
+        width:100px;
     }
 }
